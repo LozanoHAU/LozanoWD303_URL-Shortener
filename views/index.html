@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>URL Shortener Microservice | freeCodeCamp.org</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.freecodecamp.org/universal/favicons/favicon-16x16.png"
+    />
+    <!-- Google font used by the CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>URL Shortener Microservice</h1>
+      <p class="tip">Paste a URL and get a short URL back.</p>
+
+      <section>
+        <form action="api/shorturl" method="POST">
+          <fieldset style="padding:25px;">
+            <legend>URL Shortener</legend>
+            <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" />
+            <div class="buttons" style="width: 40%; margin:auto;margin-top:10px;margin-bottom:10px">
+              <button type="submit">POST URL</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <footer>
+        <p>By <a href="https://github.com/LozanoHAU?tab=repositories">Aaron Lozano</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
